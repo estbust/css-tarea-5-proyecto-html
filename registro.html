@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro | Conquer Blocks</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Regístrate en Conquer Blocks y comienza tu aprendizaje en desarrollo web full stack. Crea tu cuenta y accede a cursos interactivos de HTML, CSS, JavaScript y más.">
+    <meta name="keywords" content="Desarrollo Web, Fullstack, HTML, CSS, JavaScript, React, Node, Express">
+
+    <link rel="icon" href="icono.png" sizes="any" type="image/png">
+    <link rel="icon" href="icono.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icono.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container">
+    <figure>
+        <img width="500px" class="logo" src="/img/common/logo_conquer.png" alt="Academia Conquerblocks">
+    </figure>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">¿Quienes somos?</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="registro.html" class="select">Registro</a></li>
+            <li><a href="login.html">Inicia sesión</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>¡Regístrate con nosotros!</h1>
+    <div class="registro-container">
+      <hr>
+      <h2>Registro</h2>
+      <form action="/submit_page" method="POST" class="registro-form">
+        
+        <div class="form-group">
+          <label for="name">Nombre completo:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Fecha de nacimiento:</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Número de teléfono:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Dirección:</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="course">Selecciona un curso:</label>
+          <select id="course" name="course" required>
+            <option value="">-- Selecciona un curso --</option>
+            <option value="html-css">HTML y CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+        </div>
+
+        <p id="error-message" class="error">Por favor, completa todos los campos.</p>
+
+        <button type="submit" class="btn-primary">Registrarse</button>
+      </form>
+    </div>
+  </main>
+
+    <footer class="container">
+      <p>Academia Conquer Blocks &copy; 2026 - <a href="aviso-legal.html" class="highlight">Aviso Legal</a></p>
+    </footer>
+</body>
+
+</html>

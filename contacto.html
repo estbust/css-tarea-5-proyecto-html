@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Conquer Blocks</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Ponte en contacto con Conquer Blocks. Envíanos tus preguntas, comentarios o dudas sobre nuestros cursos de desarrollo web full stack. Estamos aquí para ayudarte.">
+  <meta name="keywords" content="Desarrollo Web, Fullstack, HTML, CSS, JavaScript, React, Node, Express">
+
+  <link rel="icon" href="icono.png" sizes="any" type="image/png">
+  <link rel="icon" href="icono.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icono.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <figure>
+            <img width="500px" class="logo" src="/img/common/logo_conquer.png" alt="Academia Conquerblocks">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">¿Quienes somos?</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="login.html">Inicia sesión</a></li>
+                <li><a href="contacto.html" class="select">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container contact-layout">
+        <div class="registro-container">
+            <h1>Ponte en contacto</h1>
+            <p>Envíanos tus preguntas o dudas sobre nuestros cursos. Estamos aquí para ayudarte.</p>
+            <hr>
+            
+            <form id="contactForm" action="procesar_contacto.php" method="POST" class="registro-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <p id="error-message" class="error">Por favor, completa todos los campos.</p>
+
+                <button type="submit" class="btn-primary">Enviar formulario</button>
+            </form>
+        </div>
+
+        <div class="map-container">
+            <h2>Puedes encontrarnos aquí:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d548689.674401512!2d55.22748795!3d25.076022449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e1!3m2!1sen!2ssv!4v1738531268994!5m2!1sen!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>Academia Conquer Blocks &copy; 2026 - <a href="aviso-legal.html" class="highlight">Aviso Legal</a></p>
+    </footer>
+</body>
+
+</html>
